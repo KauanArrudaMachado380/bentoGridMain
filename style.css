@@ -1,0 +1,662 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+
+    --purple-light:hsl(254, 88%, 90%);
+    --purple: hsl(256, 67%, 59%);
+    --yellow-light:hsl(31, 66%, 93%);
+    --yellow: hsl(39, 100%, 71%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+
+    --font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.container_main{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+/* five stars */
+
+.container_five_stars{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 20px;
+    background-color: var(--purple);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 300px
+}
+
+.title_five_stars{
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.img_five_stars{
+    width: 60%;
+}
+
+.text_five_stars{
+    color: var(--purple-light);
+    font-size: 1.2rem;
+}
+
+/* create post */
+
+.container_create{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--yellow-light);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px
+}
+
+.title_create{
+    color: var(--black);
+    font-size: 2rem;
+
+}
+
+.img_create_post{
+    width: 60%;
+}
+
+/* content */
+
+.container_ai_content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--yellow);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px
+}
+
+.title_content{
+    color: var(--black);
+    font-size: 2rem;
+    
+    font-weight: 600;
+}
+
+.img_ai_content{
+    width: 72%;
+}
+
+/* multiple platforms */
+
+.container_multiple_platforms{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px
+}
+
+.title_multiple_plataforms{
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* audience_growth */
+
+.container_audience_growth{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px
+}
+
+.title_audience_growth{
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.text_audience_growth{
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+.img_audience_growth{
+    width: 60%;
+}
+
+/* consistent schedule */
+
+.container_consistent_schedule{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--yellow);
+    padding: 20px 20px 0 20px;
+    border-radius: 10px;
+    width: 300px
+}
+
+.text_consistent_schedule{
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.img_consistent_schedule{
+    width: 70%;
+}
+
+/* schedule posts */
+
+.container_schedule_posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 20px;
+    background-color: var(--purple-light);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px
+}
+
+.img_schedule_posts{
+    width: 40%;
+}
+
+.title_schedule{
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 10px 0 0 0;
+}
+
+.text_schedule_post{
+    color: var(--black);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+/* grow_followers */
+
+.container_grow_followers{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 30px;
+    background-color: var(--purple);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px
+}
+
+.img_grow_followers{
+    width: 75%;
+}
+
+.title_grow_followers{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--purple);
+    padding: 20px;
+}
+
+.text_footer{
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.link_footer{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.link_footer:hover{
+    color: var(--purple-light);
+    text-decoration: underline;
+}
+
+@media (min-width: 1024px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* main */
+ 
+    .container_main{
+        display: grid;
+        grid-template-columns: 170px repeat(2, 190px) 170px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        " create star star lateral"
+        "create card1 card2 lateral"
+        "card3 card_top card_top card4";
+        max-width: 100%;
+        align-items: end;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+    
+    /* five_stars */
+
+    .container_five_stars{
+        grid-area: star;
+        width: 360px;
+        height: 120px;
+        justify-content: center;
+    }
+
+    .title_five_stars{
+        font-size: 2rem;
+        padding: 10px 10px;
+        font-weight: 600;
+    }
+
+    .title_five_stars strong{
+        font-weight: 500;
+    }   
+
+    .img_five_stars{
+        width: 30%;
+    }
+
+    .text_five_stars{
+        font-size: 1rem;
+    }
+    
+    /* create */
+
+    .container_create{
+        grid-area: card4;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .img_create_post{
+        width: 60%;
+        align-self: center;
+    }
+
+    .title_create{
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .title_create strong{
+        font-weight: 500;
+    }
+
+    /* content ai*/
+
+    .container_ai_content{
+        grid-area: create;
+        height: 380px;
+        width: auto;
+        padding: 0 15px;
+        align-self: flex-end;
+        justify-content: space-around;
+    }
+
+    .title_content{
+        padding-top: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .img_ai_content{
+        width: 100%;
+        align-self: center;
+    }
+
+    /* multiple_platforms */
+
+    .container_multiple_platforms{
+        grid-area: card1;
+        height: auto;
+        width: 150px;
+        padding-bottom: 2rem;
+        overflow: hidden;
+    }
+
+    .title_multiple_plataforms{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .img_multiple_platforms{
+        width: 140%;
+        
+    }
+
+    /* audience_growth */
+
+    .container_audience_growth{
+        grid-area: card3;
+        height: auto;
+        width: auto;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+    }
+
+    .title_audience_growth{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .text_audience_growth{
+        font-size: .7rem;
+    }
+
+    .img_audience_growth{
+        width: 80%;
+    }
+
+    /* consistent_schedule */
+
+    .container_consistent_schedule{
+        grid-area: card2;
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+    }
+
+    .text_consistent_schedule{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .img_consistent_schedule{    
+        width: 80%;
+        align-self: center;
+    }
+
+    /* grow_followers */
+
+    .container_grow_followers{
+        grid-area: card_top;
+        width: auto;
+        height: 130px;
+        flex-direction: row;
+    }
+
+    .img_grow_followers{
+        width: 40%;
+    }
+
+    .title_grow_followers{
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 0;
+        text-align: left;
+    }
+
+    /* schedule_posts */
+
+    .container_schedule_posts{
+        grid-area: lateral;
+        height: 339px;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .title_schedule{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }  
+
+    .img_schedule_posts{
+        width: 110%;	
+        align-self: center;
+    }
+
+    .text_schedule_post{
+        font-size: .72rem;
+        text-align: center;
+    }
+
+    .footer{
+        border-radius: 8px;
+        padding: .5rem;
+    }
+
+    .footer p{
+        font-size: .7rem;
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    /* main */
+ 
+    .container_main{
+        display: grid;
+        grid-template-columns: 250px repeat(2, 275px) 250px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "create star star lateral"
+        "create card1 card2 lateral"
+        "create card3 card_bottom card_bottom";
+        gap: 20px;
+    }
+    
+    /* five_stars */
+
+    .container_five_stars{
+        grid-area: star;
+        width: auto;
+        height: 200px;
+
+        align-self: flex-start;
+        justify-content: center;
+    }
+
+    .title_five_stars{
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+
+    .title_five_stars strong{
+        font-weight: 500;
+    }   
+
+    .img_five_stars{
+        width: 35%;
+    }
+
+    .text_five_stars{
+        font-size: 1rem;
+    }
+    
+    /* create */
+
+    .container_create{
+        grid-area: create;
+        height: 335px;
+        width: auto;
+        align-self: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .img_create_post{
+        width: 80%;
+        align-self: center;
+    }
+
+    .title_create{
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    .title_create strong{
+        font-weight: 500;
+    }
+
+    /* content ai*/
+
+    .container_ai_content{
+        grid-area: create;
+        height: 450px;
+        width: auto;
+        padding: 0 15px;
+        align-self: flex-end;
+        justify-content: space-around;
+    }
+
+    .title_content{
+        padding-top: 10px;
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+
+    .img_ai_content{
+        width: 90%;
+        align-self: center;
+    }
+
+    /* multiple_platforms */
+
+    .container_multiple_platforms{
+        grid-area: card1;
+        height: 220px;
+        width: 230px;
+        overflow: hidden;
+        padding-bottom: 2rem;
+    }
+
+    .title_multiple_plataforms{
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+
+    .img_multiple_platforms{
+        width: 145%;
+        
+    }
+
+    /* audience_growth */
+
+    .container_audience_growth{
+        grid-area: card3;
+        height: 200px;
+        width: 230px;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+    }
+
+    .title_audience_growth{
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+
+    .text_audience_growth{
+        font-size: 1.2rem;
+    }
+
+    .img_audience_growth{
+        width: 85%;
+    }
+
+    /* consistent_schedule */
+
+    .container_consistent_schedule{
+        grid-area: card2;
+        height: 253px;
+        width: 230px;
+        overflow: hidden;
+    }
+
+    .text_consistent_schedule{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .img_consistent_schedule{    
+        width: 100%;
+    }
+
+    /* grow_followers */
+
+    .container_grow_followers{
+        grid-area: card_bottom;
+        width: auto;
+        height: 210px;
+        flex-direction: row;
+    }
+
+    .img_grow_followers{
+        width: 40%;
+    }
+
+    .title_grow_followers{
+        font-size: 2.4rem;
+        font-weight: 500;
+        padding: 0;
+        text-align: left;
+    }
+
+    /* schedule_posts */
+
+    .container_schedule_posts{
+        grid-area: lateral;
+        height: 530px;
+        width: 200px;
+        padding-left: 30px;
+        overflow: hidden;
+    }
+
+    .title_schedule{
+        font-size: 1.7rem;
+        font-weight: 600;
+    }  
+
+    .img_schedule_posts{
+        width: 175%;	
+        align-self: flex-start;
+    }
+
+    .text_schedule_post{
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+}
